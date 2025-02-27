@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th  {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+        thead> tr> th {
+           position: sticky;
+           top: -0px;
+           background-color: #383838;
+        }
+        tbody> tr:nth-child(odd){ /* 2n-1*/
+            background-color: white;
+        }
+        tbody> tr:nth-child(even){ /* 2n*/
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE = tabela
+        CAPTION = título da tabela "legenda"
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+<table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+       <tr>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">População</th>
+       </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210.147.125</strong></td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Minhas Gerais</td>
+            <td class="num">17.366.189</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16.461.173</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14.930.634</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11.516.840</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11.422.973</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="num">9.616.621</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="num">9.187.103</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="num">8.690.745</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num">7.252.502</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num">7.114.598</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td class="num">7.113.540</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>
+            <td class="num">4.207.714</td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="num">3.055.149</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="num">3.351.543</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">3.526.220</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3.534.165</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">1.590.248</td>
+        </tr>
+        <tr>
+            <td>Acre</td>
+            <td class="num">894.470</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">861.773</td>
+        </tr>
+        <tr>
+            <td>Roraima</td>
+            <td class="num">631.181</td>
+        </tr>
+    </tbody>
+</table> 
+<p>Consagre sua vida a Nossa Senhora Aparecida.
+
+    Ó Maria Santíssima, pelos méritos de Nosso Senhor Jesus Cristo, em vossa querida imagem de Aparecida, espalhais inúmeros benefícios sobre todo o Brasil. 
+    
+    Eu, embora indigno de pertencer ao número de vossos filhos e filhas, mas cheio do desejo de participar dos benefícios de vossa misericórdia, prostrado a vossos pés, consagro-vos o meu entendimento, para que sempre pense no amor que mereceis; consagro-vos a minha língua para que sempre vos louve e propague a vossa devoção; consagro-vos o meu coração, para que, depois de Deus, vos ame sobre todas as coisas. Recebei-me, ó Rainha incomparável, vós que o Cristo crucificado deu-nos por Mãe, no ditoso número de vossos filhos e filhas; acolhei-me debaixo de vossa proteção; socorrei-me em todas as minhas necessidades, espirituais e temporais, sobretudo na hora de minha morte. Abençoai-me, ó celestial cooperadora, e com vossa poderosa intercessão, fortalecei-me em minha fraqueza, a fim de que, servindo-vos fielmente nesta vida,possa louvar-vos, amar-vos e dar-vos graças no céu, por toda eternidade.
+    
+    Assim seja!
+    
+    Amém.</p>
+    <p>Consagre sua vida a Nossa Senhora Aparecida.
+
+        Ó Maria Santíssima, pelos méritos de Nosso Senhor Jesus Cristo, em vossa querida imagem de Aparecida, espalhais inúmeros benefícios sobre todo o Brasil. 
+        
+        Eu, embora indigno de pertencer ao número de vossos filhos e filhas, mas cheio do desejo de participar dos benefícios de vossa misericórdia, prostrado a vossos pés, consagro-vos o meu entendimento, para que sempre pense no amor que mereceis; consagro-vos a minha língua para que sempre vos louve e propague a vossa devoção; consagro-vos o meu coração, para que, depois de Deus, vos ame sobre todas as coisas. Recebei-me, ó Rainha incomparável, vós que o Cristo crucificado deu-nos por Mãe, no ditoso número de vossos filhos e filhas; acolhei-me debaixo de vossa proteção; socorrei-me em todas as minhas necessidades, espirituais e temporais, sobretudo na hora de minha morte. Abençoai-me, ó celestial cooperadora, e com vossa poderosa intercessão, fortalecei-me em minha fraqueza, a fim de que, servindo-vos fielmente nesta vida,possa louvar-vos, amar-vos e dar-vos graças no céu, por toda eternidade.
+        
+        Assim seja!
+        
+        Amém.</p>
+        <p>Consagre sua vida a Nossa Senhora Aparecida.
+
+            Ó Maria Santíssima, pelos méritos de Nosso Senhor Jesus Cristo, em vossa querida imagem de Aparecida, espalhais inúmeros benefícios sobre todo o Brasil. 
+            
+            Eu, embora indigno de pertencer ao número de vossos filhos e filhas, mas cheio do desejo de participar dos benefícios de vossa misericórdia, prostrado a vossos pés, consagro-vos o meu entendimento, para que sempre pense no amor que mereceis; consagro-vos a minha língua para que sempre vos louve e propague a vossa devoção; consagro-vos o meu coração, para que, depois de Deus, vos ame sobre todas as coisas. Recebei-me, ó Rainha incomparável, vós que o Cristo crucificado deu-nos por Mãe, no ditoso número de vossos filhos e filhas; acolhei-me debaixo de vossa proteção; socorrei-me em todas as minhas necessidades, espirituais e temporais, sobretudo na hora de minha morte. Abençoai-me, ó celestial cooperadora, e com vossa poderosa intercessão, fortalecei-me em minha fraqueza, a fim de que, servindo-vos fielmente nesta vida,possa louvar-vos, amar-vos e dar-vos graças no céu, por toda eternidade.
+            
+            Assim seja!
+            
+            Amém.</p>
+</body>
+</html>
