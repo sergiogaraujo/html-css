@@ -7,17 +7,54 @@
 ------------------------------
 Pequenas telas: até 600px
 Celular: De 600px até 768px
-Tablet: De 768px até 992px
-Desktop:De 992px até 1200px
+Tablet: De 768px até 1024px
+Desktop:De 1024px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media print {
+@media print { /* IMPRESSÃO */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        blackground-image: url(../imagens/back-print.jpg); /* desnecessário */
+
+        main {
+            width: 90vw;
+           border: 2px solid black;
+                }
+
+        main::after {
+           content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+           text-decoration: evenline;
+        }       
+        main h1 {
+            text-shadow: none;
+            color: black;
+        }
+       
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+    
+
+
+    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
     
 }
-@media screen and (min-width: 768px) and (max-width: 991.98px) { /* TABLET */ 
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* TABLET */ 
     body {
         background-image: url(../imagens/back-tablet.jpg);
+        
     }
     img#phone { display: none; }
     img#tablet { display: block; }
@@ -26,10 +63,11 @@ Grandes telas: acima de 1200px
     img#tv { display: none; }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /* DESKTOP */
     body {
-       background-image: url(../imagens/back-tablet.jpg);
-    }
+       background-image: url(../imagens/back-pc.jpg);
+       }
+
     img#phone { display: none; }
     img#tablet { display: none; }
     img#print { display: none; }
@@ -39,5 +77,16 @@ Grandes telas: acima de 1200px
    
 
 @media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
 
 }
