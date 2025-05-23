@@ -17,13 +17,13 @@ p {
     text-align: justify;
 }
 
-h1,h2 {
+h1, h2 {
    margin-bottom: 20px;
    line-height: 1.2em;
    text-align: left;
 }
 
-header, section, normal{
+header, section.normal {
     padding: 20px;
 }
 
@@ -32,7 +32,7 @@ section.flex-content {
     background-color:rgba(22, 22, 129, 0.99);  
 
     display: flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
 }
 
 article.text-media {
